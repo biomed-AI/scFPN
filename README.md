@@ -25,10 +25,6 @@ Also you can install the required packages follow there instructions (tested on 
 `conda env create -f environment.yaml`
 
 
-## Datasets
-
-Please Contact us (chenjn227@mail2.sysu.edu.cn) to obtain the Data (from DrugBank and DGIdb) and Splits.
-
 ### Statistic of DGI Dataset
 |Dataset|Chen et al.|Cao et al.|PBMC 10K-1|PBMC 10K-2|Ma te al.|GSE194122|
 |:-:|:-:|:-:|:-:|:-:|:-:|:-:|
@@ -39,15 +35,15 @@ Please Contact us (chenjn227@mail2.sysu.edu.cn) to obtain the Data (from DrugBan
 |Protocol|SNARE|sci-CAR|10x|10x|SHARE|10x|
 
 ## Usages
-For training on DrugBank on the transductive scenario:
+For training on GSE194122:
 ```
-CUDA_VISIBLE_DEVICES=0 python main.py --data-name DrugBank --testing --dynamic-train --dynamic-test --dynamic-val --save-results --max-nodes-per-hop 200
+CUDA_VISIBLE_DEVICES=0 python train5.py -a GSE194122 -r default -z 32  --combine concat --gene-loss mse -o output
 ```
 
 
-For training on DGIdb on the inductive scenario:
+For training on other datasets:
 ```
-CUDA_VISIBLE_DEVICES=0 python main.py --data-name DGIdb --testing --mode inductive --dynamic-train --dynamic-test --dynamic-val --save-results --max-nodes-per-hop 200
+python train5.py -a DATASET -r default -z 32  --combine concat --gene-loss mse -o output  --count-key X
 ```
 
 More parameters could be found by:
@@ -55,24 +51,3 @@ More parameters could be found by:
 python main.py -h
 ```
 
-## Reference
-If you find the code useful, please cite our paper.
-```
-@inproceedings{cosmig,
-  title     = {Communicative Subgraph Representation Learning for Multi-Relational Inductive Drug-Gene Interaction Prediction},
-  author    = {Rao, Jiahua and Zheng, Shuangjia and Mai, Sijie and Yang, Yuedong},
-  booktitle = {Proceedings of the Thirty-First International Joint Conference on
-               Artificial Intelligence, {IJCAI-22}},
-  publisher = {International Joint Conferences on Artificial Intelligence Organization},
-  editor    = {Lud De Raedt},
-  pages     = {3919--3925},
-  year      = {2022},
-  month     = {7},
-  note      = {Main Track},
-  doi       = {10.24963/ijcai.2022/544},
-  url       = {https://doi.org/10.24963/ijcai.2022/544},
-}
-```
-
-## Contact
-Jiahua Rao (raojh6@mail2.sysu.edu.cn) and Yuedong Yang (yangyd25@mail.sysu.edu.cn)
