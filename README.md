@@ -1,6 +1,0 @@
-# biock
-
-
-## Requirements
-yaml
-gtfToGenePred
