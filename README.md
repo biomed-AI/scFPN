@@ -46,8 +46,3 @@ For training on other datasets:
 python train5.py -a DATASET -r default -z 32  --combine concat --gene-loss mse -o output  --count-key X
 ```
 
-More parameters could be found by:
-```
-python main.py -h
-```
-
