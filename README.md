@@ -25,7 +25,7 @@ Also you can install the required packages follow there instructions (tested on 
 `conda env create -f environment.yaml`
 
 
-### Statistic of DGI Dataset
+## Statistic of DGI Dataset
 |Dataset|Chen et al.|Cao et al.|PBMC 10K-1|PBMC 10K-2|Ma te al.|GSE194122|
 |:-:|:-:|:-:|:-:|:-:|:-:|:-:|
 |#Cell|1047|1621|10412|11020|32231|69249|
