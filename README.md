@@ -37,7 +37,7 @@ Also you can install the required packages follow there instructions (tested on 
 ## Usages
 For training on GSE194122:
 ```
-CUDA_VISIBLE_DEVICES=0 python train5.py -a GSE194122 -r default -z 32  --combine concat --gene-loss mse -o output
+python train5.py -a GSE194122 -r default -z 32  --combine concat --gene-loss mse -o output
 ```
 
 
