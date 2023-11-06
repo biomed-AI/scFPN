@@ -6,16 +6,17 @@ Integrating Single-cell Multi-omics Data through Deep Embedded Fusion Representa
 
 ## Requirements
 
-Stable version: Python 3.7.9 + PyTorch 1.7.1+cu110 + PyTorch_Geometric 1.6.3.
+Stable version: 
 
-
-Install [PyTorch](https://pytorch.org/)
-
-Install [PyTorch_Geometric](https://rusty1s.github.io/pytorch_geometric/build/html/notes/installation.html)
+python==3.8.16 
+pytorch==1.12.0
+scanpy==1.9.3
+anndata==0.8.0
+episcanpy==0.4.0
 
 Other required python libraries: numpy, scipy, pandas, h5py, networkx, tqdm etc.
 
-Also you can  install the required packages follow there instructions (tested on a linux terminal):
+Also you can install the required packages follow there instructions (tested on a linux terminal):
 
 `conda env create -f environment.yaml`
 
