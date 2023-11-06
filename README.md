@@ -9,9 +9,13 @@ Integrating Single-cell Multi-omics Data through Deep Embedded Fusion Representa
 Stable version: 
 
 python==3.8.16 
+
 pytorch==1.12.0
+
 scanpy==1.9.3
+
 anndata==0.8.0
+
 episcanpy==0.4.0
 
 Other required python libraries: numpy, scipy, pandas, h5py, networkx, tqdm etc.
