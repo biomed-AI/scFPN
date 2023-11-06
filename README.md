@@ -35,14 +35,9 @@ Also you can install the required packages follow there instructions (tested on 
 |Protocol|SNARE|sci-CAR|10x|10x|SHARE|10x|
 
 ## Usages
-For training on GSE194122:
-```
-python train5.py -a GSE194122 -r default -z 32  --combine concat --gene-loss mse -o output
-```
 
-
-For training on other datasets:
+For training:
 ```
-python train5.py -a DATASET -r default -z 32  --combine concat --gene-loss mse -o output  --count-key X
+python train5.py -a DATASET_NAME -r default -z 32  --combine concat --gene-loss mse -o output  --count-key X
 ```
 
