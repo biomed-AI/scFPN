@@ -27,15 +27,16 @@ Also you can install the required packages follow there instructions (tested on 
 
 ## Datasets
 
-Please Contact us (raojh6@mail2.sysu.edu.cn) to obtain the Data (from DrugBank and DGIdb) and Splits.
+Please Contact us (chenjn227@mail2.sysu.edu.cn) to obtain the Data (from DrugBank and DGIdb) and Splits.
 
 ### Statistic of DGI Dataset
-|Dataset|DrugBank|DGIdb|
-|:-:|:-:|:-:|
-|#Drug|425|1185|
-|#Gene|11284|1164|
-|#Interactions|80924|11266|
-|Interaction type|2|14|
+|Dataset|Chen et al.|Cao et al.|PBMC 10K-1|PBMC 10K-2|Ma te al.|GSE194122|
+|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
+|#Cell|1047|1621|10412|11020|32231|69249|
+|#CellType|4|3|19|12|22|23|
+|#Gene|18666|113153|36601|36601|13428|23296|
+|#Peak|136771|189603|116490|344592|108377|120010|
+|Protocol|SNARE|sci-CAR|10x|10x|SHARE|10x|
 
 ## Usages
 For training on DrugBank on the transductive scenario:
