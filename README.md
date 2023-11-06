@@ -1,7 +1,7 @@
 # scFPN
 Integrating Single-cell Multi-omics Data through Deep Embedded Fusion Representation
 
-![alt text](https://github.com/biomed-AI/scFPN/blob/main/framework.jpg "Illustration of scFPN")
+![alt text](https://github.com/biomed-AI/scFPN/blob/main/model1.pdf "Illustration of scFPN")
 
 
 This is the standalone code for our paper: [Communicative Subgraph Representation Learning for Multi-Relational Inductive Drug-Gene Interaction Prediction](https://arxiv.org/abs/2205.05957)
