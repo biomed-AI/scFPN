@@ -1,5 +1,5 @@
 # scFPN
-Integrating Single-cell Multi-omics Data through Deep Embedded Fusion Representation
+Integrating Single-cell Multi-omics Data through Self-supervised Clustering
 
 ![alt text](https://github.com/biomed-AI/scFPN/blob/main/model.png "Illustration of scFPN")
 
